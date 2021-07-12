@@ -1,4 +1,4 @@
- const movies = [
+ let movies = [
     {
       id: 0,
       name: "Star Wars - The new one",
@@ -24,12 +24,12 @@
 export const getMovies = () => movies;
 
 export const getById = id => {
-     const filteredMovies = movies.filter(movie => String(id) === String(movie.id));
+     const filteredMovies = movies.filter(movie => id === movie.id);
      return filteredMovies[0];
 }
 
 export const deleteMovie = id => {
-    const cleanedMovies = movies.filter(movie =>  String(id) !== String(movie.id));
+    const cleanedMovies = movies.filter(movie =>  id !== movie.id);
     if(movies.length > cleanedMovies.length) {
         movies = cleanedMovies;
         return true;

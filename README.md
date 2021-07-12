@@ -76,3 +76,4 @@ Mutation 은 Database 상태가 변할때 사용
 db 에서 addMovie 를 name 과 score 를 받아서 새로운 영화를 만들고 schema 에 Mutation 에 addMovie 를 추가 (DB 가 변하닌 작동)
 resolvers 에도 mutation 을 추가하고 playground 에서 확인!
 
+deleteMovie 를 가지고 영화를 삭제 deleteMovie 는 boolean 을 리턴하게 되어있음
