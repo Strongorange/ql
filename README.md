@@ -77,3 +77,6 @@ db 에서 addMovie 를 name 과 score 를 받아서 새로운 영화를 만들�
 resolvers 에도 mutation 을 추가하고 playground 에서 확인!
 
 deleteMovie 를 가지고 영화를 삭제 deleteMovie 는 boolean 을 리턴하게 되어있음
+
+
+yts 의 api 를 가지고 정보를 가져오고 영화 정보를 가져올 수 있었음!
