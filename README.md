@@ -70,3 +70,9 @@ query {
 }
 id:1 으로 주는 부분 {id} 가 아닌 args 로 하고 console.log(args) 를 찍어보면 {id:1} 이 나옴 {id} 를 사용해서 id 의 값만 가져오고
 getById 에 그 id 를 전달하여 id 에 해당하는 사람을 찾아줌!
+People 을 영화로 바꿔줌
+
+Mutation 은 Database 상태가 변할때 사용
+db 에서 addMovie 를 name 과 score 를 받아서 새로운 영화를 만들고 schema 에 Mutation 에 addMovie 를 추가 (DB 가 변하닌 작동)
+resolvers 에도 mutation 을 추가하고 playground 에서 확인!
+
