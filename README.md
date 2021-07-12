@@ -40,3 +40,12 @@ query {
         name: "chanhwi"
     }
 } 를 받음!
+
+
+query 에서 type Chanhwi 를 만들고 이름,나이, 성별의 형태를 지정 후 resolvers 에서  chanhwi 의 객체를 만든 후 query: () => chanhwi 를 리턴
+playground 에서 query {
+    person {
+        age
+        name 
+    }
+} 같이 원하는 정보만 요청할 수 있음!
