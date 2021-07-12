@@ -49,3 +49,24 @@ playground 에서 query {
         name 
     }
 } 같이 원하는 정보만 요청할 수 있음!
+
+쿼리를 People 이라는 배열로 확장해서 People 배열에 있는 각각의 person 들을 가져올 수 있음
+특정 perosn 을 가져오기 위해 각 person 에 id 를 추가해주었음
+
+const resolvers = {
+    Query: {
+        people: () => people,
+        person: (_, {id}) => {
+            return getById(id)
+        }
+    }
+}
+person 의 첫번째 인자는 일단 패스 두번째 인자는 우리가 playground 에서 
+query {
+  person(id:1) {
+    name
+    age
+  }
+}
+id:1 으로 주는 부분 {id} 가 아닌 args 로 하고 console.log(args) 를 찍어보면 {id:1} 이 나옴 {id} 를 사용해서 id 의 값만 가져오고
+getById 에 그 id 를 전달하여 id 에 해당하는 사람을 찾아줌!
