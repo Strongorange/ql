@@ -31,3 +31,12 @@ type Query {
 Query 에 name 을 요청하면 String 을 주는데 ! 를 붙혀서 required 설정
 서버에서 typeDefs 로 graphql 을 설정
 resolver 를 만들어서 Query 의 name 을 요청하면 "chanhwi" 라는 텍스트를 보냄
+query {
+    name
+}
+의 리턴으로 
+{
+    data: {
+        name: "chanhwi"
+    }
+} 를 받음!
